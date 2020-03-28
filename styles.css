@@ -1,0 +1,575 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+ul {
+    font-style: none;
+    list-style: none;
+}
+
+li {
+    font-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+.top {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    position: static;
+}
+
+.top div {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 20%;
+    border-right: 1px solid #666666;
+    min-width: ;
+}
+
+.top-txt {
+    height: 100%;
+    width: 32%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.15rem;
+    justify-content: space-around;
+    font-weight: 600;
+    border-right: 1px solid #666666;
+}
+
+.grey-txt {
+    color: grey;
+}
+
+.search-bar form {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: fit-content;
+    border: 2px solid #a19d9d;
+    border-radius: 10px;
+}
+
+.search-bar input {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    width: 80%;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+.top-div {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+
+#express-solution {
+    border: none;
+    background-color: rgb(197, 13, 13);
+    font-size: 1.2rem;
+    color: white;
+    width: 15%;
+    height: 60%;
+    transition: 0.3s;
+    min-width: 78px;
+}
+
+#express-solution:focus {
+    outline: none;
+}
+
+#express-solution:hover {
+    cursor: pointer;
+    background-color: rgb(44, 9, 9);
+}
+
+#top-right-div {
+    width: 45%;
+    justify-content: space-evenly;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+
+}
+
+#ph-no-div {
+    display: flex;
+
+}
+
+.shopping-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+#right-menu {
+    height: 0;
+    width: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+#left-menu {
+    height: 0;
+    width: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdown {
+
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    width: 100%;
+    visibility: hidden;
+    z-index: 3;
+    background-color: maroon;
+    color: white;
+}
+
+#left-dropdown {
+    z-index: 3;
+    right: 20px;
+    background-color: #635858;
+
+}
+
+.dropdown li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid black;
+    height: 30px;
+}
+
+.dropdown li:hover {
+    background-color: rgb(44, 9, 9);
+
+}
+
+.dropdown ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.drop-downs-div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: -8px;
+    margin-right: 8px;
+}
+
+.drop-down-element {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    width: 10%;
+    min-width: 120px;
+
+}
+
+.drop-down-element:hover {
+    cursor: pointer;
+}
+
+.drop-down-element:hover {
+
+    color: red;
+    text-decoration: underline;
+
+
+}
+
+.right-icon {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.drop-down-txt {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #666666;
+}
+
+#popped-up-div1 {
+    z-index: 2;
+    background-color: #666666;
+    position: absolute;
+    top: 125px;
+    overflow: hidden;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    display: flex;
+}
+
+
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #ededed;
+    height: 150px;
+    color: #4d4848;
+}
+
+.nav div {
+    margin-left: 30px;
+}
+
+.nav h1 {
+    margin-left: 30px
+}
+
+.location {
+    display: flex;
+}
+
+.location p:hover {
+    color: rgb(158, 148, 148);
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-row {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+
+}
+
+.main-block {
+    width: 25%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    min-width: 250px;
+
+}
+
+.main-img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.main-img {
+    height: 270px;
+    width: 80%;
+    transition: 0.4s ease-in-out;
+    ;
+}
+
+.main-btn {
+    width: 30%;
+    height: 30px;
+    background-color: green;
+    color: whitesmoke;
+    border: none;
+    transition: 0.2s ease-in-out
+}
+
+.main-btn:focus {
+    outline: none;
+}
+
+.main-btn:hover {
+    cursor: pointer;
+    background-color: rgb(3, 19, 3);
+}
+
+footer {
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    margin-top: 100px;
+    display: flex;
+    color: rgb(155, 153, 153);
+}
+
+.footer-div {
+    width: 16.66%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer ul {
+    list-style-type: none;
+    font-size: 1.1rem;
+}
+
+footer li {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+.follow-links {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rows {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.icons {
+    transition: 0.4s ease-in-out;
+}
+
+.icons:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+.floating-div {
+    height: 0;
+    width: 0;
+    background-color: burlywood;
+    visibility: hidden;
+    z-index: 3;
+    color: black;
+    text-decoration: none;
+    bottom: 50px;
+    left: 20px;
+    position: relative;
+    font-size: 0.8rem;
+}
+
+
+#drop-down1:hover .floating-div {
+    visibility: visible;
+    height: fit-content;
+    width: fit-content;
+}
+
+#drop-down2:hover .floating-div {
+    visibility: visible;
+    height: fit-content;
+    width: fit-content;
+}
+
+#drop-down3:hover .floating-div {
+    visibility: visible;
+    height: fit-content;
+    width: fit-content;
+}
+
+#drop-down4:hover .floating-div {
+    visibility: visible;
+    height: fit-content;
+    width: fit-content;
+}
+
+#drop-down5:hover .floating-div {
+    visibility: visible;
+    height: fit-content;
+    width: fit-content;
+}
+
+#drop-down6:hover .floating-div {
+    visibility: visible;
+    height: fit-content;
+    width: fit-content;
+}
+
+#drop-down7:hover .floating-div {
+    visibility: visible;
+    height: fit-content;
+    width: fit-content;
+}
+
+#drop-down8:hover .floating-div {
+    visibility: visible;
+    height: fit-content;
+    width: fit-content;
+}
+
+#drop-down9:hover .floating-div {
+    visibility: visible;
+    height: fit-content;
+    width: fit-content;
+}
+
+#drop-down10:hover .floating-div {
+    visibility: visible;
+    height: fit-content;
+    width: fit-content;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+    .search-bar {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+
+    .logo {
+        transform: scaleX(0.8);
+    }
+
+    #left-menu {
+        visibility: visible;
+        height: 32px;
+        width: 32px;
+        margin-left: 5px;
+    }
+
+    .drop-downs-div {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+        overflow: hidden;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 850px) {
+
+    #top-right-div {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+        transform: translate(9999, 0);
+        transition: 0;
+    }
+
+    #right-menu {
+        visibility: visible;
+        height: 32px;
+        width: 32px;
+        margin-right: 5px;
+    }
+
+    .right-icon {
+        visibility: visible;
+        height: 32px;
+        width: 32px;
+    }
+
+    .right-icon:hover {
+        filter: contrast(2);
+        cursor: pointer;
+    }
+
+    .hide {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 1150px) {
+    .top-txt {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .logo {
+        border: none;
+    }
+
+    .main-row {
+        flex-wrap: wrap;
+    }
+
+}
+}
